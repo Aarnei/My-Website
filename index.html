@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png" />
+  </head>
+  <body id="particles-js">
+    <div class="nav">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="index.html">Home</a>
+    </div>
+    <div class="content">
+      <h1>Hello, I am <span class="name">Aarni</span></h1>
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    </div>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="../js/particles.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+      particlesJS.load("particles-js", "js/config.json", function () {
+        console.log("particles.json loaded...");
+      });
+    </script>
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+  </body>
+</html>
